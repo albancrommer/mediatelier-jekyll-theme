@@ -1,5 +1,6 @@
 <div class="menu">
+  <a href=/ > root </a>
   {% for item in site.data.menu %}
-  <div><a href=".{{item.link}}" {% if page.url == "{{item.link}}" %}style="color: #ffffff;"{% endif %}>{{item.name}}</a></div>
+  <div><a href="./{{item.link}}" {% if page.url == "{{item.link}}" %}style="color: #ffffff;"{% endif %}>{{item.name}}</a></div>
   {% endfor %}
 </div>
